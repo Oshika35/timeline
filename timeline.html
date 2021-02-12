@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe@4/dist/gumshoe.polyfills.min.js">
+    </script>
+</head>
+
+<body>
+
+    <div style="height:800px;background-color:blueviolet;" class="test"></div>
+
+    <div class="container">
+        <div class="container-inner">
+
+            <div class="filling-stem"></div>
+            <div class="section header">
+                <div class="section-inner">
+                    <div class="master-head">
+                        <h1 class="page-title">Découvrez le processus de création de votre site web</h1>
+                        <p class="page-description">De la définition du projet à la mise en ligne de votre site web, les
+                            étapes
+                            sont nombreuses, découvrez-les ci-dessous.</p>
+                        <p class="scroll-button">Découvrir</p>
+                    </div>
+                </div> <!-- section-inner -->
+            </div> <!-- header -->
+
+            <div class="timeline-container">
+                <div class="timeline-container-inner">
+                    <div class="stem-background"></div>
+                    <div class="stem-nav">
+                        <ul id="my-awesome-nav">
+                            <li><a href="#step-one"><div class="color-change"></div></a></li>
+                            <li><a href="#step-two"><div class="color-change"></div></a></li>
+                            <li><a href="#step-three"><div class="color-change"></div></a></li>
+                            <li><a href="#step-four"><div class="color-change"></div></a></li>
+                            <li><a href="#step-five"><div class="color-change"></div></a></li>
+                        </ul>
+                    </div>
+                    <div class="step-container">
+                        <div class="step-container-inner">
+                            <div class="step step-one" id="step-one">
+                                <div class="step-content">
+                                    <h2 class="step-title">1. Définition du projet</h2>
+                                    <div class="entry-content">
+                                        <p>Après avoir répondu à un questionnaire pour mieux cibler vos attentes, nous
+                                            définirons
+                                            ensemble votre
+                                            projet web. Pour un projet web déjà existant, je peux gratuitement effectuer un
+                                            audit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step step-two" id="step-two">
+                                <div class="step-content">
+                                    <h2 class="step-title">2. Conception du design</h2>
+                                    <div class="entry-content">
+                                        <p>À la suite de la définition de votre projet, je concevrai un design correspondant à
+                                            vos
+                                            besoins en m’appuyant sur les éléments fournis ou en proposant dans le cas où vous
+                                            ne
+                                            disposeriez pas de ressources web pour votre projet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step step-three" id="step-three">
+                                <div class="step-content">
+                                    <h2 class="step-title">3. Validation du design</h2>
+                                    <div class="entry-content">
+                                        <p>Je vous transmettrai alors le design pour vous donner un aperçu du rendu de votre
+                                            site
+                                            web, nous discuterons des révisions que vous souhaiterez éventuellement avant de
+                                            passer
+                                            à la conception de votre site web.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step step-four" id="step-four">
+                                <div class="step-content">
+                                    <h2 class="step-title">4. Conception du site web</h2>
+                                    <div class="entry-content">
+                                        <p>La conception de votre site web pourra débuter après la validation du design et je me
+                                            chargerai de la location du serveur, de la conception du site ainsi que du
+                                            référencement
+                                            web et de la mise en place de tous les outils nécessaire au bon fonctionnement de
+                                            votre
+                                            site web.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step step-five" id="step-five">
+                                <div class="step-content">
+                                    <h2 class="step-title">5. Finalisation du projet</h2>
+                                    <div class="entry-content">
+                                        <p>Le projet s’achèvera sur la présentation du résulat final et la familiarisation avec
+                                            votre nouvel environnement pour vous permettre de gérer votre site web en toute
+                                            simplicité.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>End of the page</p>
+    </footer>
+    <script>
+        var spy = new Gumshoe('#my-awesome-nav a', {
+            offset: 300,
+        });
+    </script>
+</body>
+
+</html>

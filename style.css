@@ -1,0 +1,231 @@
+:root {
+  --e-global-color-primary: #4c63b6;
+  --e-global-color-secondary: #616e7c;
+  --e-global-color-text: #f5f7fa;
+  --e-global-color-accent: #b3ecff;
+  --e-global-color-1e69d2a: #1f2933;
+  --e-global-color-016036c: #19216c;
+  --e-global-color-63c8df3: #bed0f7;
+  --e-global-color-faaf6f9: #65d6ad;
+  --e-global-typography-primary-font-family: "Montserrat";
+  --e-global-typography-primary-font-size: 48px;
+  --e-global-typography-primary-font-weight: normal;
+  --e-global-typography-secondary-font-family: "Montserrat";
+  --e-global-typography-secondary-font-size: 34px;
+  --e-global-typography-secondary-font-weight: normal;
+  --e-global-typography-secondary-letter-spacing: 0.25px;
+  --e-global-typography-text-font-family: "Source Sans Pro";
+  --e-global-typography-text-font-size: 17px;
+  --e-global-typography-text-font-weight: normal;
+  --e-global-typography-text-letter-spacing: 0.5px;
+  --e-global-typography-accent-font-family: "Source Sans Pro";
+  --e-global-typography-accent-font-size: 15px;
+  --e-global-typography-accent-font-weight: bold;
+  --e-global-typography-accent-text-decoration: none;
+  --e-global-typography-accent-letter-spacing: 1.25px;
+  --e-global-typography-d22d6f6-font-family: "Source Sans Pro";
+  --e-global-typography-d22d6f6-font-size: 16px;
+  --e-global-typography-d22d6f6-font-weight: bold;
+  --e-global-typography-d22d6f6-text-decoration: underline;
+  --e-global-typography-5a07423-font-family: "Montserrat";
+  --e-global-typography-5a07423-font-size: 24px;
+  --e-global-typography-5a07423-font-weight: 600;
+  --e-global-typography-becfdb1-font-family: "Source Sans Pro";
+  --e-global-typography-becfdb1-font-size: 15px;
+  --e-global-typography-becfdb1-font-weight: 400;
+  --e-global-typography-becfdb1-letter-spacing: 0.25px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #4c63b6;
+}
+
+.container {
+  margin: 0px auto;
+  position: relative;
+}
+
+/* header */
+.section .section-inner {
+  margin: 0px auto;
+  width: 1024px;
+}
+
+.header {
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  background-image: linear-gradient(to bottom, #6fc7d4 0%, #39acbd 100%);
+}
+
+.header .master-head {
+  padding: 7% 30px;
+}
+
+.header .page-title {
+  padding: 0 30px 0 30px;
+  font-size: 60px;
+  line-height: 1em;
+  letter-spacing: 10px;
+  color: #fff;
+}
+
+.header .page-description {
+  margin: 30px auto;
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 2em;
+  color: #fff;
+}
+
+.header .scroll-button {
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 20px 15px 20px;
+  display: inline-block;
+  background: #3093a2;
+  cursor: pointer;
+}
+
+.header .scroll-button:hover {
+  background: #246f7b;
+}
+
+.header .scroll-button:active {
+  background: #194c53;
+}
+
+/* stem */
+.filling-stem {
+  position: sticky;
+  z-index: 1;
+  float: left;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 50vh;
+  width: 5px;
+  background-color: #BED0F7;
+}
+
+.stem-background {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 100%;
+  width: 5px;
+  background-color: #1F2933;
+}
+
+.stem-nav {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 100%;
+}
+
+#my-awesome-nav {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#my-awesome-nav li a {
+  border: solid 3px black;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #1F2933;
+}
+
+#my-awesome-nav li a .color-change {
+  height: 40px;
+  width: 40px;
+  background-color: #1F2933;
+  border-radius: 50%;
+}
+
+#my-awesome-nav li.active a .color-change {
+  background-color: rgb(255, 251, 0);
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#my-awesome-nav :first-child ~ li:not(.active, .active ~ li) .color-change {
+  background-color: rgb(255, 251, 0);
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+/* timeline */
+.timeline-container {
+  position: relative;
+}
+
+.timeline-container .timeline-container-inner {
+  height: 1500px;
+}
+
+.step-container {
+  margin: 0 25% 0 25%;
+  height: 1500px;
+  display: flex;
+  align-items: center;
+}
+.step {
+  display: flex;
+  padding: 75px 0px 75px 0px;
+}
+.step .step-content {
+  width: 40%;
+}
+.step:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
